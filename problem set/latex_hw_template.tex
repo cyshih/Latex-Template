@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,graphicx}
+\graphicspath{ {images/} }
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\textheight}{0.8in}
+\addtolength{\topmargin}{-.4in}
+\newtheoremstyle{quest}{\topsep}{\topsep}{}{}{\bfseries}{}{ }{\thmname{#1}\thmnote{ #3}.}
+\theoremstyle{quest}
+\newtheorem*{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{question}{Question}
+\newtheorem*{exercise}{Exercise}
+\newcommand{\coursename} {
+%% put the course name here %%
+Course Name
+}%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\name}{
+%% put your name here %%
+Bob the minion
+}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\sid}{
+%% put your student id here %%
+12345678
+}%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\hw}{
+%% and which homework assignment is it? %%%%%%%%
+%% put the correct number below              %%%%%%%%%
+	1
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{
+	\vspace{0pt}
+	\normalsize \hfill \name \sid
+	\\\vspace{10pt}
+	\Large \coursename Homework \hw
+}
+\pagestyle{myheadings}
+\markright{\name \sid \hfill Homework \hw\qquad\hfill}
+
+%==============================================================================
+% Macros.
+%==============================================================================
+\newcommand{\problem}[1]{\section{#1}}        % Problem.
+\newcommand{\subproblem}[1]{\subsection{#1}}      % Sub Problem
+\newcommand{\subsubproblem}[1]{\subsubsection{#1}}      % Sub Problem
+\newcommand{\new}[1]{{\em #1\/}}        % New term (set in italics).
+\newcommand{\set}[1]{\{#1\}}            % Set (as in \set{1,2,3})
+\newcommand{\setof}[2]{\{\,{#1}|~{#2}\,\}}    % Set (as in \setof{x}{x > 0})
+\newcommand{\C}{\mathbb{C}}                    % Complex numbers.
+\newcommand{\N}{\mathbb{N}}                     % Positive integers.
+\newcommand{\Q}{\mathbb{Q}}                     % Rationals.
+\newcommand{\R}{\mathbb{R}}                     % Reals.
+\newcommand{\Z}{\mathbb{Z}}                     % Integers.
+\newcommand{\compl}[1]{\overline{#1}}        % Complement of ...    
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}  % norm of ...  
+\newcommand{\abs}[1]{\left|#1\right|}  % norm of ...  
+\newcommand{\squareExp}[1]{\left(#1 \right)^2} % square the expression
+\newcommand{\infinity}{\infty} % for forgetting the infinity symbol command..
+\newcommand{\deriv}[1]{\frac{d#1}{dx}}
+\newcommand{\grad}{\nabla}
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\union}{\cup} 
+\newcommand{\intersect}{\cap} 
+
+% for matrix that includes row / column vector
+\makeatletter
+\newcommand{\longdash}[1][2em]{%
+\makebox[#1]{$\m@th\smash-\mkern-7mu\cleaders\hbox{$\mkern-2mu\smash-\mkern-2mu$}\hfill\mkern-7mu\smash-$}}
+\makeatother
+\newcommand{\omitskip}{\kern-\arraycolsep}
+\newcommand{\llongdash}[1][2em]{\longdash[#1]\omitskip}
+\newcommand{\rlongdash}[1][2em]{\omitskip\longdash[#1]}
+
+%% If you want to use a function like ''sin'' or ''cos'', you can do it like this
+%% (we probably won't have much use for this)
+% \DeclareMathOperator{\sin}{sin}   %% just an example (it's already defined)
+
+
+\begin{document}
+  \maketitle
+  \problem{}
+    \subproblem{}
+      \begin{proof}
+      \end{proof}
+\end{document}
